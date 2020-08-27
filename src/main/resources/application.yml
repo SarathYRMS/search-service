@@ -1,0 +1,24 @@
+# server port
+server:
+  port: 8080
+
+# Application upstream end points
+search:
+  upstream:
+    max-results: 5
+    books-url: https://www.googleapis.com/books/v1/volumes?q=SEARCH_TERM&maxResults=MAX_RESULTS
+    albums-url: https://itunes.apple.com/search?term=SEARCH_TERM&entity=album&limit=MAX_RESULTS
+
+# Actuator configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+# Logging configuration
+logging:
+  level:
+    com.animana.assessment.app: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
