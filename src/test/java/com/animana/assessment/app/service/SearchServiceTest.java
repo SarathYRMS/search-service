@@ -79,7 +79,6 @@ public class SearchServiceTest {
 
     @Test
     public void test_zero_results_fetching_term() {
-        System.out.println("SearchService: " + searchService);
         StepVerifier.create(searchService.fetchSearchResults("invalid_search_goes_here"))
                 .expectNextCount(0)
                 .verifyComplete();
