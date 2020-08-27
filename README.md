@@ -8,13 +8,13 @@ Service URL
 
 Swagger URL
 --
- -Below Swagger Documentation can help to understand about the Interface
- -http://localhost:8080/swagger-ui/index.html
+ - Below Swagger Documentation can help to understand about the Interface
+ - http://localhost:8080/swagger-ui/index.html
 
 Metrics URLs
 --
- -http://localhost:8080/actuator/metrics (Metrics URL)
- -http://localhost:8080/actuator/metrics/reactor.flow.duration (Upstream service metrics)
+ - http://localhost:8080/actuator/metrics (Metrics URL)
+ - http://localhost:8080/actuator/metrics/reactor.flow.duration (Upstream service metrics)
  
 
 Technical Info
